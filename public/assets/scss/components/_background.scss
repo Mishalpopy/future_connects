@@ -1,0 +1,47 @@
+@use '../utils' as *;
+
+/*--
+    - Background color
+-----------------------------------------*/
+.grey-bg {
+	background: var(--tp-grey-1);
+}
+.grey-bg-2 {
+	background: var(--tp-grey-2);
+}
+
+.white-bg {
+	background: var(--tp-common-white);
+}
+
+.black-bg {
+	background: var(--tp-common-black);
+}
+.theme-bg {
+	background: var(--tp-theme-1);
+}
+.theme-bg2 {
+	background: #1F8E7A;
+}
+.footer-bg{
+	background-color: #111111;
+}
+.theme-bgfoo{
+background-color:#232222 ;
+}
+
+.theme-navbar{
+	transition: background-color 0.3s; // Add a smooth transition for the background color change
+	background-color: transparent; // Set the initial background color (transparent)
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+  
+	&.scrolled {
+	  background-color: white;
+	  padding: 50px; 
+	  // Define the white background color when scrolled
+	}  
+}
