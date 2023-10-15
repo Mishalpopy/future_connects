@@ -30,7 +30,7 @@ const AboutArea = () => {
   
   return (
     <>
-      <div className="tp-about-area pt-120 pb-90">
+      <div className="tp-about-area pt-60 pb-60">
         <div className="container">
           <div className="row">
             <div className="col-xl-5 col-lg-6 d-flex justify-content-center align-items-center">

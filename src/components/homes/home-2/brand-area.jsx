@@ -50,7 +50,7 @@ const BrandArea = () => {
     const sliderRef = useRef(null)
     return (
         <>
-            <div className="tp-brand-area brand-strok p-relative theme-bg2 pt-100 pb-100">
+            <div className="tp-brand-area brand-strok p-relative theme-bg2 pt-50 pb-50">
                 <div className="container">
                     <div className="row brand-power">
                         <div className="tp-brand-active">

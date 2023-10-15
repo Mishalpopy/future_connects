@@ -110,7 +110,7 @@ const SliderArea = () => {
                   <div className="container">
                     <div className="row">
                       <div className={item.col}>
-                        <div className="tp-slider-content">
+                        <div className="tp-slider-content mt-120">
                           <span className="tp-slider-sub-title"> {item.sub_title} </span>
                           <h2 className="tp-slider-title"> {item.title} </h2>
                           <p> {item.info} </p>
