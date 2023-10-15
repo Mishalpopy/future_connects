@@ -17,9 +17,9 @@ const Sidebar = ({isOpen, setIsOpen}) => {
                         <h3>CONTACT US</h3>
                     </div>
                     <ul className="sidebar-list">
-                        <li>27 Division St, New York</li>
-                        <li>+1 800 123 456 78</li>
-                        <li>sectox@mail.com</li>
+                        <li>Al-Baghdadiyah Al-Gharbiyah Jeddah, KSA</li>
+                        <li>+971 56 371 784</li>
+                        <li>info@futureconnect.com</li>
                     </ul>
                     <div className="tp-sidebar-social">
                         <SocialLinks />  
