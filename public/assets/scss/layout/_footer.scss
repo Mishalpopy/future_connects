@@ -24,19 +24,18 @@
 .footer-widget-title {
 	color: #fff;
 	font-size: 16px;
-	margin-bottom: 30px;
+
 }
 
 .footer-widget p {
 	color: #aeaeae;
 }
 
-.footer-widget ul {
+.footer-widget a {
 	overflow: hidden;
 
 	& li {
 		margin-bottom: 8px;
-		color: #aeaeae;
 		list-style: none;
 		width: 49%;
 		float: left;
@@ -47,17 +46,25 @@
 	}
 }
 
-.footer-widget ul li::before {
+.footer-widget a::before {
 	content: "\f105";
 	font-family: var(--tp-ff-fontawesome);
 	margin-right: 8px;
 	display: inline-block;
 	transform: translateY(1px);
 }
+.footer-widget a{
+	color: white;
+}
+.footer-widget a:hover{
 
-.footer-widget ul li:hover::before {
+	cursor: pointer;
+	color: rgb(38, 38, 38);
+}
+.footer-widget a:hover::before {
 	color: var(--tp-theme-1);
 	margin-right: 5px;
+	cursor: pointer;
 }
 
 .footer-col-2 {

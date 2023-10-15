@@ -8,39 +8,40 @@ const footer_content = {
    location: <>Al-Baghdadiyah Al-Gharbiyah <br /> Jeddah, KSA</>,
    phone: <>+971 56 371 7846 <br /> +971 56 371 7846</>,
    pages_title: "Main Pages",
+   home_link: <>Home</>,
+   about_link: <>About Us</>,
+   service_link: <>Services</>,
+   contact_link: <>Contact Us</>,
+
    pages: [
       {title: "About Us", link: "/about"},
-      {title: "Connectivity and Collaboration", link: "#"},
       {title: "Contact Us", link: "#"},
-      {title: "Network Infrastructure and Security", link: "#"},
       {title: "Careers", link: "#"},
-      {title: "Safety, Surveillance, and Automation", link: "#"},
-      {title: "Partners", link: "#"},
-      {title: "Digital Transformation and Developmen", link: "#"}, 
+      {title: "Partners", link: "#"}, 
    ]
    
    
    
    
 }
-const {about, about_des, get_in_touch, location, office_time, phone, pages_title, pages}  = footer_content
+const {about, about_des, get_in_touch, location, office_time, phone, pages_title, pages, home_link, about_link, service_link, contact_link}  = footer_content
 
-const Footer = ({style_2}) => {
+const Footer = ({style_1}) => {
     return (
         <>
      <footer>
-      <div className={`footer-widget-area pt-90 pb-50 ${style_2 ? "footer-area-white" : "footer-bg "}`}>
+      <div className={`footer-widget-area pt-90 pb-50 ${style_1 ? "footer-area-white" : "footer-bg "}`}>
          <div className="container">
             <div className="row">
                <div className="col-lg-3 col-md-6">
-                  <div className={`${style_2 ? "footer-widget-2" : "footer-widget"} footer-col-1 mb-50`}>
+                  <div className={`${style_1 ? "footer-widget-1" : "footer-widget"} footer-col-1 mb-50`}>
                      <h3 className="footer-widget-title">{about}</h3>
                      <p>{about_des}</p>
-                     {style_2 && <a className="footer-link" href="#">Get Started Now <i className="far fa-long-arrow-alt-right"></i></a>}
+                     {style_1 && <a className="footer-link" href="#">Get Started Now <i className="far fa-long-arrow-alt-right"></i></a>}
                   </div>
                </div>
                <div className="col-lg-2 col-md-6">
-                  <div className={`${style_2 ? "footer-widget-2" : "footer-widget"} footer-col-2 mb-50`}>
+                  <div className={`${style_1 ? "footer-widget-2" : "footer-widget"} footer-col-2 mb-50`}>
                      <h3 className="footer-widget-title">{get_in_touch}</h3>
                      <div className="footer-contact">
                         <div className="footer-contact-item">
@@ -55,18 +56,29 @@ const Footer = ({style_2}) => {
                      </div>
                   </div>
                </div>
-               <div className="col-lg-4 col-md-6">
-                  <div className={`footer-widget ${style_2 ? "footer-widget-2" : ""} footer-col-3 mb-50`}>
-                     <h3 className="footer-widget-title">{pages_title}</h3>
-                     <ul>
-                        {pages.map((item , i)  => 
-                          <li key={i}><a href={item.link}>{item.title}</a></li>                       
-                        )} 
-                     </ul>
+               <div className="col-lg-2 col-md-6">
+                  <div className={`${style_1 ? "footer-widget-2" : "footer-widget"} footer-col-2 mb-50`}>
+                     <h3 className="footer-widget-title">{get_in_touch}</h3>
+                     <div className="footer-contact">
+                        <div className="footer-contact-item">
+                          <a href='/'>{home_link}</a>
+                        </div>
+                        <div className="footer-contact-item">
+                        <a href='/'>{about_link}</a>
+                        </div>
+                        <div className="footer-contact-item">
+                        <a href='/'>{service_link}</a>
+                        </div>
+
+                        <div className="footer-contact-item">
+                        <a href='/'>{contact_link}</a>
+                        </div>
+                     </div>
                   </div>
                </div>
+       
                <div className="col-lg-3 col-md-6"> 
-                  <div className={`footer-widget ${style_2 ? "footer-widget-2 footer-col-3" : "footer-col-4"} mb-50`}>
+                  <div className={`footer-widget ${style_1 ? "footer-widget-2 footer-col-3" : "footer-col-4"} mb-50`}>
                      <h3 className="footer-widget-title">Get Newsletter</h3>
                      <p>Sign up today for hints, tips & the
                         latest product news</p>
@@ -76,9 +88,7 @@ const Footer = ({style_2}) => {
                            <button type="submit"> <i className="far fa-envelope-open"></i></button>
                         </form>
                      </div>
-                     <div className="footer-social mt-20">
-                        <SocialLinks /> 
-                     </div>
+                     
                   </div>
                </div>
             </div>

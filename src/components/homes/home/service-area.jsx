@@ -82,7 +82,7 @@ const ServiceArea = () => {
     return (
         <>
    <div className="service-area">
-      <div className="service-tab-bg pt-115" style={{backgroundImage: `url(/assets/img/services/tab-bg.jpg)`}}>
+      <div className="service-tab-bg pt-60" style={{backgroundImage: `url(/assets/img/services/tab-bg.jpg)`}}>
          <div className="container">
                <div className="tp-section-box tp-section-box-2 p-relative mb-45 text-center">
                   <span className="tp-section-subtitle d-inline-block pre mb-10">services</span>

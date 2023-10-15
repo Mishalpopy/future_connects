@@ -27,7 +27,7 @@ const setting = {
 const TestimonialArea = () => {
     return (
         <>
-           <div className="testimonial-area pt-120 pb-120 grey-bg">
+           <div className="testimonial-area pt-60 pb-60 grey-bg">
       <div className="container">
          <div className="row text-center">
             <div className="col-12">
