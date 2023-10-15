@@ -28,10 +28,10 @@ const CtaArea = () => {
                             <div key={i} className=" col-xl-6 col-lg-12">
                                 <div className="tp-cta p-relative text-center tp-cta-space" 
                                     style={{backgroundImage: `url(${item.bg_img})`}}>
-                                    <div className="tp-cta-text-wapper p-30">
+                                    <div className="tp-cta-text-wapper">
                                         <span>{item.title}</span>
                                         <h3 className="cta-title">{item.description}</h3>
-                                        <div className="cta-link pt-110 pb-50">
+                                        <div className="cta-link pt-110">
                                             <Link href="/contact"><i className="fal fa-long-arrow-right"></i></Link>
                                         </div>
                                     </div>
