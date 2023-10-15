@@ -5,7 +5,7 @@ import Wrapper from "../layout/wrapper";
 export default function Home() {
   return (
     <Wrapper>
-      <SEO pageTitle={"Sectox - CCTV & Security"} />
+      <SEO pageTitle={"Future Connect - KSA"} />
       <HomeOne /> 
     </Wrapper>
   );
