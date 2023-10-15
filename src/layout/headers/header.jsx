@@ -9,22 +9,22 @@ const HeaderOne = () => {
   const [isHide, setIsHide] = useState(false);
   const [isToggleSearch, setToggleSearch] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector('.theme-navbar');
-      if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    };
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const navbar = document.querySelector('.theme-navbar');
+//       if (window.scrollY > 0) {
+//         navbar.classList.add('scrolled');
+//       } else {
+//         navbar.classList.remove('scrolled');
+//       }
+//     };
 
-    window.addEventListener('scroll', handleScroll);
+//     window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
 
   const offerHadle = () => {
     setIsHide(true);
@@ -35,7 +35,7 @@ const HeaderOne = () => {
          <header className='theme-navbar'>
               
 
-            <div className="fixed-top navbar-expand-lg navbar-light pl-30 pr-30">
+            <div className=" navbar-expand-lg navbar-light pl-30 pr-30">
                <div className="container-fluid  navbar-inverse ">
                   <div className="row align-items-center">
                      <div className="col-xl-2 col-lg-6 col-md-5 col-7">

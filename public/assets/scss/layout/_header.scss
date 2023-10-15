@@ -731,9 +731,7 @@
 .theme-navbar {
     transition: background-color 0.3s; // Add smooth transition for the background color change
     background-color: transparent; // Set the initial background color (transparent)
-    position: fixed;
-    top: 0;
-    left: 0;
+   position: absolute;
 
     width: 100%;
     z-index: 1000;
