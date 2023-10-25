@@ -1,65 +1,64 @@
 import CallToAction from '@/src/forms/call-to-action';
 import React from 'react';
+import { FaHotel,FaVoteYea } from 'react-icons/fa';
+import { GrTechnology,GrShieldSecurity,GrSystem } from 'react-icons/gr';
+import { AiOutlineSolution } from 'react-icons/ai';
+import { MdAnalytics,MdReviews } from 'react-icons/md';
+import { LiaFileInvoiceSolid } from 'react-icons/lia';
+
+
 
 
 const service_details_content = {
     img: "/assets/img/services/service-details-bg.jpg",
     title: "Service Overview",
-    info_1: <>CCTV stands for closed-circuit television. So how does a modern CCTV system work? The answer depends
-    on the type of system involved. The systems are best defined by the types of cameras used. There are two
-    common types of cameras in use today: Analog and IP-based cameras.</>,
-    info_2: <>CCTV, also known as closed-circuit television, is a security monitor system that enables you to always keep
-    a watchful eye around or in your business. CCTV security systems contain monitors and cameras that allow
-    you to view live events, as well as recorders that archive footage for later use. A CCTV is a video surveillance 
-    system that is placed in security cameras to help record images and videos in a home, business property, &
-    even on the roads. The camera works by monitoring, recording video images and transmitting them to a
-    monitor. A CCTV is therefore used primarily for security purposes</>,
+    info_1: <>At Future Connect, we understand the importance of a strong online presence and efficient connectivity in today's digital age. Our Connectivity and Digital Presence services are designed to help businesses and organizations establish a robust online footprint, engage with their audience, and thrive in the digital world.</>,
+    info_2: <>In partnering with Future Connect, you can expect a range of benefits that will enhance your online presence and connectivity. These advantages include:
 
-    // over-veiw-list
-    over_veiw_list: [
-        {id: 1, icon: "flaticon-cctv-camera", title: "Reasonable Pricing"},
-        {id: 2, icon: "flaticon-bubble-chat-1", title: "Quality Services"},
-        {id: 3, icon: "flaticon-group", title: "Professional Team"},
-        {id: 4, icon: "flaticon-secure", title: "24/7 Online Support"},
-        {id: 5, icon: "flaticon-web-security", title: "Get Free Estimation"},
-        {id: 6, icon: "flaticon-security", title: "Get In Touch"},
-    ],
+    Our Connectivity and Digital Presence services are designed to help businesses and organizations establish a robust online footprint, engage with their audience, and thrive in the digital world.</>,
+
+over_veiw_list: [
+    {id: 1, icon: <MdAnalytics />, title: "ERP Solutions"},
+    {id: 2, icon: <LiaFileInvoiceSolid />, title: "E-invoicing"},
+    {id: 3, icon: <MdAnalytics />, title: "Document Management"},
+    {id: 4, icon: <MdAnalytics />, title: "Website Development"},
+    {id: 5, icon: <MdAnalytics />, title: "Digital Marketing"},
+    {id: 6, icon: <MdAnalytics />, title: "Social Media Marketing"},
+    {id: 6, icon: <MdAnalytics />, title: "Google Ads"},
+
+],
     
-    overview: <>A CCTV is a video surveillance  system that is placed in security cameras to help record images and videos in
-    a home, business property, & even on the roads. The camera works by monitoring, recording video images &
-    transmitting them to a monitor. A CCTV is therefore used primarily for security purposes</>,
+    overview: <>In today's digital age, a strong online presence and efficient connectivity are pivotal for the success of businesses and organizations. At Future Connect, we recognize the significance of these elements in the modern business landscape. Our "Connectivity and Digital Presence Services" are designed to help you establish a robust online footprint, engage effectively with your audience, and thrive in the digital realm.</>,
 
     overview_features: [
         {
             id: 1, 
             features: [
-                "Mi 360° 1080p Full HD WiFi Smart Security Camera.",
-                "TP-Link Tapo C100 1080p Full HD Indoor WiFi Security Camera.",
-                "Yi 87001 Home Camera Wireless IP Security Surveillance System", 
+                "Enhanced Online Visibility: Stand out in the digital crowd with a strong online presence.",
+                "Targeted Advertising: Reach the right audience with precision and efficiency.",
+                "Boost brand recognition and customer engagement.",
+
             ],
         },
         {
             id: 2, 
             features: [
-                "TP-Link Tapo C200 Smart Cam Pan Tilt Home WiFi Camera.",
-                "You can operate CCTV cameras without the internet or data center.",
-                "Qubo Smart Cam 360", 
+                "Improved User Experience: Create a user-friendly online environment that ensures customer satisfaction.", 
+                "Data-Driven Strategies: Benefit from data-backed strategies that provide measurable results.", 
             ],
         },
     ],
 
-    bottom_info_title: "What is difference between CCTV and TV?",
-    bottom_info: <>The difference between CCTV and standard TV is that standard TV openly broadcasts signals to the public.
-    In contrast, CCTV broadcasts are not sent to the public. CCTV uses either a wired or wireless transmission
-    to transmit the broadcast from the video cameras to the monitor(s) or recording device.</>,
+    bottom_info_title: "Why Choose Future Connect",
+    bottom_info: <>Our team of experts is dedicated to staying at the forefront of digital trends and technology. We understand the critical role of a strong digital presence in today's competitive landscape, and we work tirelessly to deliver effective solutions for your connectivity and digital needs.</>,
 
-    service: [
-        {id:1, icon: "fas fa-cctv" , title: "Install & Configure"},
-        {id:2, icon: "fas fa-video" , title: "Repair & Service"},
-        {id:3, icon: "fas fa-cogs" , title: "Maintenance"},
-        {id:4, icon: "fas fa-camera" , title: "Video Verification"},
-        {id:5, icon: "far fa-tv" , title: "Interactive Security"}, 
-    ],
+service: [
+    { id: 1, icon: <GrTechnology />, title: "Digital Solutions" },
+    { id: 2, icon: <GrShieldSecurity />, title: "Security Solutions" },
+    { id: 3, icon: <AiOutlineSolution />, title: "Operations Solutions" },
+    { id: 4, icon: <FaHotel />, title: "Hospitality Solutions" },
+],
+
 
     materials: [
         {id: 1, icon: "fas fa-file-pdf", title: "Company Profile"},
@@ -90,7 +89,7 @@ const ServiceDetailsArea = () => {
                                         <div key={i} className="col-xl-4 col-lg-4 col-md-6">
                                             <div className="tp-over-view-item mb-30">
                                                 <div className="over-veiw-counter"></div>
-                                                <i className={item.icon}></i>
+                                                {React.cloneElement(item.icon, { className: 'icon-serverlist', size: '50px', color: '#2a8e5c' })}
                                                 <h5>{item.title}</h5>
                                             </div>
                                         </div>                                    
@@ -105,8 +104,8 @@ const ServiceDetailsArea = () => {
                                                     <ul>
                                                         {item.features?.map((feature, index) => 
                                                             <li key={index}>
-                                                                <i className="fal fa-check"></i>
-                                                                 {feature}
+                                                            <FaVoteYea color="#2a8e5c" size="30px" />
+                                                                <p> {feature}</p>
                                                             </li>
                                                         )} 
                                                     </ul>
@@ -131,7 +130,9 @@ const ServiceDetailsArea = () => {
                                 <ul>
                                     {service.map((item, i) => 
                                         <li key={i}>
-                                            <a href="#"><span><i className={item.icon}></i>{item.title}</span></a>
+                                            <a href="#"><span>
+                    {React.cloneElement(item.icon, { className: 'icon-colored' })} {item.title}
+                </span></a>
                                         </li>                                    
                                     )} 
                                 </ul>

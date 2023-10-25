@@ -6,9 +6,9 @@
 
 .breadcrumb{
     &__title{
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 700;
-        color: var(--tp-common-black);
+        color: var(--tp-common-white);
         @media #{$xs}{
             font-size: 60px;
         }

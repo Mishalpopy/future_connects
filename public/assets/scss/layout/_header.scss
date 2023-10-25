@@ -287,9 +287,9 @@
 
             & .submenu {
                 position: absolute;
-                width: 220px;
+                width: 300px;
                 background-color: var(--tp-common-black);
-                padding: 30px;
+              
                 top: 105%;
                 left: 0;
                 text-align: left;
@@ -302,9 +302,14 @@
                     display: block;
                     margin: 0;
                     padding-left: 0;
+                    padding: 10px;
 
                     &::before {
                         display: none;
+                    }
+
+                    &:hover {
+                        background-color: var(--tp-theme-1);
                     }
 
                     & a {
@@ -312,9 +317,7 @@
                         padding: 0;
                         font-size: 14px;
 
-                        &:hover {
-                            color: var(--tp-theme-1);
-                        }
+                       
                     }
 
                     &:not(:last-child) {
@@ -730,7 +733,7 @@
 
 .theme-navbar {
     transition: background-color 0.3s; // Add smooth transition for the background color change
-    background-color: transparent; // Set the initial background color (transparent)
+    background-color: white; // Set the initial background color (transparent)
    position: absolute;
 
     width: 100%;

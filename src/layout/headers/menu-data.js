@@ -23,10 +23,10 @@ const menu_data = [
     title: "Service",
     link: "/service",
     sub_menus: [
-      { link: "/service", title: "Connectivity and Collaboration" }, 
-      { link: "/service-details", title: "Network Infrastructure and Security" },
-      { link: "/service", title: "Safety, Surveillance, and Automation" }, 
-      { link: "/service-details", title: "Digital Transformation and Development" },
+      { link: "/service-details", title: "Connectivity and Digital Presence" }, 
+      { link: "/security-and-access-control", title: "Security and Access Control" },
+      { link: "/business-process-and-operations", title: "Business Process and Operations" }, 
+      { link: "/hospitality-solutions", title: "Hospitality Solutions" },
     ],
   },
   {

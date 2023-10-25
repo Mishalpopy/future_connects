@@ -33,8 +33,6 @@ const HeaderOne = () => {
     return (
         <>
          <header className='theme-navbar'>
-              
-
             <div className=" navbar-expand-lg navbar-light pl-30 pr-30">
                <div className="container-fluid  navbar-inverse ">
                   <div className="row align-items-center">

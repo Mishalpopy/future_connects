@@ -484,9 +484,9 @@
                     align-items: center;
                     padding-right: 10px;
 
-                    & i {
-                        color: var(--tp-theme-1);
-                        font-size: 30px;
+                    & .icon-colored {
+                        color: var(--tp-common-black);
+                        font-size: 63px;
                         padding-right: 20px;
                     }
                 }
@@ -572,8 +572,8 @@
     border: 1px solid #f3f3f3;
     padding-right: 0;
     transition: .3s;
-    & i{
-        font-size: 60px;
+    & .icon-serverlist svg{
+        width: 60px;
         color: var(--tp-theme-1);
     }
     & h5{
@@ -643,7 +643,7 @@
             padding-left: 30px;
             margin-bottom: 15px;
             padding-right: 55px;
-            & i{
+            & .icon-serverlist{
                 position: absolute;
                 top: 4px;
                 left: 0;
