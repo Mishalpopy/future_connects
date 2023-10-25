@@ -63,7 +63,7 @@ service: [
     materials: [
         {id: 1, icon: "fas fa-file-pdf", title: "Company Profile"},
         {id: 2, icon: "fas fa-file-image", title: "Service Details"},
-        {id: 3, icon: "fas fa-file-prescription", title: "Service Technician"},
+        
     ]
 
 
