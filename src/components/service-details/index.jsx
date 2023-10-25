@@ -9,7 +9,7 @@ const ServiceDetails = () => {
   return (
     <>
       <HeaderOne />
-      <BreadcrumbDigital title="Digital Solutions" innertitle="Commercial CCTV System" />
+      <BreadcrumbDigital title="Digital Solutions" innertitle="Future Connect" />
       <ServiceDetailsArea />
       <Footer />
     </>
